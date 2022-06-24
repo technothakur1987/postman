@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Sstyle.css">
+    <title>post get request app</title>
+</head>
+
+<body>
+    <nav id="navbar">
+        <ul>
+            <li>
+                POSTMASTER &#9889
+            </li>
+        </ul>
+    </nav>
+    <div id="container">
+
+
+        <form >
+            <legend>Welcome to PostMaster</legend>
+            <fieldset id="urlBox">
+                <label for="url">URL:&#160;&#160; &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;
+                    &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;
+                    &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;
+                    &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;
+                    &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;
+                    &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;
+                </label>
+                <input type="text" id="url" name="url" placeholder="Enter Url Here!!!"><br><br>
+            </fieldset>
+
+
+            <fieldset id="requestTypeBox">
+                <p id="requestType"> REQUEST
+                    TYPE:&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;
+                    &#160;&#160;&#160;&#160;&#160;&#160;
+                    &#160;&#160;&#160;&#160;&#160;&#160; &#160;&#160;&#160;&#160;&#160;&#160;
+                    &#160;&#160;&#160;&#160;&#160;&#160; &#160;&#160;&#160;&#160;&#160;&#160;
+                    &#160;&#160;&#160;&#160;&#160;&#160; &#160;&#160;&#160;&#160;&#160;&#160;
+                    &#160;&#160;&#160;&#160;&#160;&#160; &#160;&#160;&#160;&#160;&#160;&#160; &#160;&#160;&#160;</p>
+                <div id="requestTypeRadio">
+                    <input type="radio" id="requestTypePost" name="requestType" value="requestTypePost">
+                    <label id="postLabel" for="url">POST</label><br>
+                    <input type="radio" id="requestTypeGet" name="requestType" value="requestTypeGet">
+                    <label  id="getLabel" for="url">GET</label><br>
+                </div>
+            </fieldset>
+
+
+            <fieldset id="contentTypeBox">
+                <p id="contentType">CONTENT
+                    TYPE:&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;
+                    &#160;&#160;&#160;&#160;&#160;&#160;
+                    &#160;&#160;&#160;&#160;&#160;&#160; &#160;&#160;&#160;&#160;&#160;&#160;
+                    &#160;&#160;&#160;&#160;&#160;&#160; &#160;&#160;&#160;&#160;&#160;&#160;
+                    &#160;&#160;&#160;&#160;&#160;&#160; &#160;&#160;&#160;&#160;&#160;&#160;
+                    &#160;&#160;&#160;&#160;&#160; &#160;&#160;&#160;&#160;&#160;&#160; &#160;&#160;&#160;</p>
+                <div id="contentTypeRadio">
+                    <input type="radio" id="json" name="contentType" value="json">
+                    <label  id="jsonLabel" for="contentType">JSON</label><br>
+                    <input type="radio" id="customParameters" class="customParameters" name="contentType" value="customParameters">
+                    <label  id="customParamLabel"  class = "customParamLabel" for="contentType">CUSTOM PARAMETERS</label><br>
+                </div>
+            </fieldset>
+            <div id="customParam">
+                <label id="parameter"
+                    for="parameter">PARAMETER1&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</label><input
+                    type="text" id="paramkey1" name="paramkey1" placeholder="Enter Parameter Key 1">&#160;&#160;&#160;&#160;&#160;&#160;<input type="text"
+                    id="paramvalue1" placeholder="Enter Parameter Value 1" name="paramvalue1">
+                <button id="button2" >+</button>
+            </div>
+            <div class="divcreated"> 
+
+            </div>
+
+            <fieldset id="requestJsonBox">
+                <label for="requestJson">ENTER REQUEST JSON:&#160;&#160;
+                    &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;
+                    &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;
+                    &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;
+                    &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;
+
+
+                </label>
+
+                <textarea id="requestJson" name="requestJson" rows="3"></textarea>
+            </fieldset>
+
+
+            <div id="submit">SUBMIT</div>
+
+            <fieldset id="responseJsonBox">
+                <label
+                    for="responseJson">RESPONSE:&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;
+                    &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;
+                    &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;
+                    &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;
+                    &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;
+
+
+                </label>
+
+                <textarea id="responseJson" name="responseJson" rows="3">Your Response Will Appear Here!!!</textarea>
+            </fieldset>
+
+
+
+
+
+    </div>
+    <footer id="footer">An Open Source App </footer>
+
+
+    <script src="index.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Blaka&family=Ubuntu:wght@700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size: 9px ;
+}
+#navbar{
+    
+    background-color: rgb(155, 11, 148);
+    color: gold;
+    font-family: 'Blaka', cursive;
+    font-size: 5rem  ;
+    padding: 2rem 2rem ;
+}
+
+fieldset{
+    border: none;
+    margin-top: 2rem ;
+}
+#container{
+    background-color: yellow;
+    
+    border: 8px double red;
+    
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 2rem ;
+}
+legend{
+    font-size: 3rem ;
+}
+#url{
+    height: 3rem ;
+    background-color: aqua;
+    font-size: 2rem ;
+
+}
+#requestTypeBox{
+    display: flex;
+}
+#requestTypeRadio{
+    
+
+}
+#contentTypeBox{
+    display: flex;
+}
+#contentTypeRadio{
+   
+
+}
+
+#responseJsonBox{
+    display: flex;
+}
+#responseJson{
+    height: 30vh;
+    width:95vw;
+}
+#button2{
+    padding: 0 3rem ;
+    margin-left: 85vw;
+    text-align: center;
+    font-size: 4rem ;
+    
+
+}
+#customParam{
+    margin-top: 3rem ;
+}
+#paramkey1{
+    height: 3rem ;
+    background-color: aqua;
+    font-size: 2rem ;
+
+}
+.paramkey{
+    height: 3rem ;
+    background-color: aqua;
+    font-size: 2rem ;
+
+}
+.paramvalue{
+    height: 3rem ;
+    background-color: aqua;
+    font-size: 2rem ;
+
+}
+#paramvalue1{
+    height: 3rem ;
+    background-color: aqua;
+    font-size: 2rem ;
+
+}
+#submit,#button2{
+    
+    background-color: red;
+    color: white;
+    font-size: 2rem ;
+    padding: 2rem 3rem  ;
+    border-radius: 2rem ;
+    width: 7vw;
+    height: 3vh;
+}
+ #button2:hover{
+    cursor: pointer;
+    border-color: red;
+    
+    background-color: aqua;
+    color: red;
+    
+}
+#submit:hover{
+    cursor: pointer;
+    color: red;
+    border-color: red;
+    
+    background-color: aqua;
+    
+
+}
+#requestJson , #responseJson{
+   
+   
+    background-color: aqua;
+    font-size: 2rem ;
+
+}
+
+
+#footer{
+    background-color: rgb(155, 11, 148);
+    
+    
+    color: gold;
+    font-family: 'Blaka', cursive;
+    font-size: 5rem ;
+    text-align:center;
+
+}
